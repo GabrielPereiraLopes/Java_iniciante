@@ -1,0 +1,80 @@
+package javabasico.poo;
+
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class JavaBasicoPoo {
+
+    public static void main(String[] args) {
+        
+        JOptionPane.showMessageDialog(null, "Bem vindo ao sistema de entregas online!");
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite o seu nome: ");
+        String nome = sc.nextLine();
+        
+        System.out.println("Digite a sua idade: ");
+        int idade = sc.nextInt();
+        
+        System.out.println("Digite o seu CEP :");
+        int cep = sc.nextInt();
+        System.out.println("CEP:"  +cep);
+        
+        JOptionPane.showMessageDialog(null, "Cadastro criado com sucesso!");
+        JOptionPane.showMessageDialog(null, "Nome: "+nome
+                                                           +"\nIdade: "+idade
+                                                            +"\nCEP: " +cep);
+         
+        String escolha = JOptionPane.showInputDialog("Possui restricoes alimenticias ? se sim digite aqui");
+        System.out.println("Restricoes salvas com sucesso!");
+        
+
+    }
+    
+}
+        //System.out.println("Hello world");
+        // boolean vBoolean = true;
+        //int vInt = 10;
+        //float vFloat=2.3f;
+        //double vDouble = 10.2;
+        //String vString= "Aula Java";
+        
+        //System.out.println("Variavel booleana:"  +vBoolean
+                            //+"\nVariavel inteira:" +vInt
+                            //+"\nVariavel double:"  +vDouble
+                            //+"\nVariavel float: "  +vFloat
+                            //+"\nVariavel texto: "  +vString);
+
+
+        //---------------------------------------------------------------
+
+    //Scanner sc = new Scanner(System.in);
+      
+      
+      //System.out.println("Digite um nome: ");
+      //String nome= sc.nextLine();
+      
+      //System.out.println("Digite sua idade: ");
+      //int idade = sc.nextInt();
+      
+      //System.out.println("Digite o seu salário");
+      //double salario= sc.nextDouble();
+      
+      //System.out.println("Nome digitado: " +nome
+                           //+"\nIdade: " +idade
+                           //+"\nSalário: "+salario);
+      
+    //---------------------------------------------------------------
+
+
+    //String nome = JOptionPane.showInputDialog("Digite seu nome: "); 
+    //JOptionPane.showMessageDialog(null, "O nome digitado foi: \n" +nome);
+    //System.out.println(nome);
+    
+    //String idade = JOptionPane.showInputDialog("Digite a sua idade: ");
+    //int idadeInteira=Integer.parseInt(idade);
+    
+    //int idade2= Integer.parseInt(JOptionPane.showInputDialog("Digite a sua idade: "));
+    //JOptionPane.showMessageDialog(null, "A idade digitada foi: \n" +idade2);
